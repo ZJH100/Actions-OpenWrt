@@ -61,7 +61,6 @@ jobs:
         tar -xf openwrt-sdk-*.tar.xz
         rm openwrt-sdk-*.tar.xz
         mv openwrt-sdk-* openwrt
-        git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: Load custom feeds
